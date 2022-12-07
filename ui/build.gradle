@@ -12,7 +12,8 @@ group groupName
 final def keystorePropertiesFile = rootProject.file("keystore.properties")
 
 android {
-    compileSdkVersion 31
+    ndkVersion "21.4.7075529"
+    compileSdkVersion 33
     buildFeatures {
         buildConfig = true
         dataBinding = true
@@ -56,6 +57,7 @@ android {
         }
     }
     lintOptions {
+        abortOnError false
         disable('LongLogTag')
         warning('MissingTranslation')
         warning('ImpliedQuantity')

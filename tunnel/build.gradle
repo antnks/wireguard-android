@@ -6,7 +6,8 @@ version wireguardVersionName
 group groupName
 
 android {
-    compileSdkVersion 31
+    ndkVersion "21.4.7075529"
+    compileSdkVersion 33
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
