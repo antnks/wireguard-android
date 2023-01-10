@@ -6,9 +6,17 @@ This is an Android GUI for [WireGuard](https://www.wireguard.com/). It [opportun
 
 ## Building
 
+In case you get error building:
+
 ```
-$ git clone --recurse-submodules https://git.zx2c4.com/wireguard-android
+unsupported ELF machine number 183
+```
+checkout the branch `remotes/origin/lr/for-jason`
+
+```
+$ git clone --recurse-submodules https://github.com/antnks/wireguard-android
 $ cd wireguard-android
+$ git checkout remotes/origin/lr/for-jason
 $ ./gradlew assembleRelease
 ```
 
